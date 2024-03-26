@@ -155,7 +155,7 @@ insertLoadingDiv();
 
   //---------------------------------------------------------------------
 
-  fetch("/new/html/footer.html")
+  fetch("../webkit/new/html/footer.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("mtc_footer").innerHTML = data;
