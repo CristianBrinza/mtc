@@ -55,55 +55,55 @@ body::-webkit-scrollbar {
   
   @font-face {
     font-family: "MTC-Futura New";
-    src: url("/fonts/MTC-FuturaNewBold.ttf") format("truetype");
+    src: url("../webkit/fonts/MTC-FuturaNewBold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
   }  
   
   @font-face {
     font-family: "MTC-Futura New";
-    src: url("/fonts/MTC-FuturaNewHeavi.ttf") format("truetype");
+    src: url("../webkit/fonts/MTC-FuturaNewHeavi.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
   }
   
   @font-face {
     font-family: "MTC-Futura New";
-    src: url("/fonts/MTC-FuturaNewDemi.ttf") format("truetype");
+    src: url("../webkit/fonts/MTC-FuturaNewDemi.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
   }
   
   @font-face {
     font-family: "MTC-Futura New";
-    src: url("/fonts/MTC-FuturaNewMedium.ttf") format("truetype");
+    src: url("../webkit/fonts/MTC-FuturaNewMedium.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: "MTC-Futura New";
-    src: url("/fonts/MTC-FuturaNewLight.ttf") format("truetype");
+    src: url("../webkit/fonts/MTC-FuturaNewLight.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
   }
 
   @font-face {
     font-family: "MTC_Highway";
-    src: url("/fonts/MTC_Highway-Bold.otf") format("truetype");
+    src: url("../webkit/fonts/MTC_Highway-Bold.otf") format("truetype");
     font-weight: 700;
     font-style: normal;
   }
   
   @font-face {
     font-family: "MTC_Highway";
-    src: url("/fonts/MTC_Highway-Regular.otf") format("truetype");
+    src: url("../webkit/fonts/MTC_Highway-Regular.otf") format("truetype");
     font-weight: 400;
     font-style: normal;
   }
   
   @font-face {
     font-family: "MTC_Highway";
-    src: url("/fonts/MTC_Highway-Medium.otf") format("truetype");
+    src: url("../webkit/fonts/MTC_Highway-Medium.otf") format("truetype");
     font-weight: 500;
     font-style: normal;
   }
