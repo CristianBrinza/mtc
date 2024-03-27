@@ -12,13 +12,13 @@
     <link rel="icon" type="image/x-icon" href="../landings/assets/general/favico_logo.png">
 
 
-    <title>e-sim Moldtelecom</title>
+    <title>e-SIM Moldtelecom</title>
     
 
 </head>
 
 <body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../webkit/mtc_webkit_v2.css" rel="stylesheet" type="text/css" />
     <script src="../webkit/mtc_webkit_v2.js"></script>
 
@@ -29,6 +29,24 @@
             margin: 0 auto;
             padding: 0 10px;
             box-sizing: border-box;
+           
+        }
+
+        @media (max-width:1220px) {
+            .esim_main {
+            max-width: 580px;
+            width: 100%;
+           
+
+        }
+    }
+        @media (max-width:600px) {
+            .esim_main {
+            max-width: 100%;
+            padding: 0 20px;
+           
+
+        }
 
         }
     </style>
@@ -101,6 +119,23 @@ display: flex;
     #esim_hero_right_img_btn_text{
         width: 90%;
         text-align: center;
+    }
+
+
+    @media (max-width:1220px) {
+        #esim_hero {
+    flex-direction: column-reverse;
+}
+
+#esim_hero_img{
+    width: 100%;
+
+}
+
+#esim_hero_right {
+    width: 100%;
+}
+        
     }
     </style>
 
@@ -211,6 +246,15 @@ display: flex;
                 line-height: 100%;
                 /* 20px */
             }
+
+
+            @media (max-width:600px) {
+                #esim_alegi {
+    padding: 20px 10px;
+
+}
+                
+            }
         </style>
         <div id="esim_alegi">
 
@@ -219,7 +263,7 @@ display: flex;
                 <div class="carousell_blocks">
                     <div class="esim_carousell_card">
                         <div class="esim_carousell_card_tilte">
-                            Ce este un
+                            Ce este un<br>
                             <span class="esim_carousell_card_tilte_red">e-SIM</span>?
                         </div>
 
@@ -312,21 +356,7 @@ display: flex;
                 //adaptiveHeight: true,
                 responsive: [
                     {
-                        breakpoint: 1351,
-                        settings: {
-                            slidesToShow: 3
-
-                        }
-                    },
-                    {
-                        breakpoint: 951,
-                        settings: {
-                            slidesToShow: 2
-
-                        }
-                    },
-                    {
-                        breakpoint: 651,
+                        breakpoint: 1221,
                         settings: {
                             slidesToShow: 1
 
@@ -457,6 +487,32 @@ display: flex;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+
+
+            @media (max-width:1220px) {
+                .esim_pachet {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.esim_pachet_left {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+            }
+@media (max-width:600px) {
+
+    .esim_pachet_left {
+    gap: 10px;
+}
+.esim_pachet_left_block {
+    width: 45%;
+}
+                
             }
         </style>
         <div class="esim_pachet">
@@ -697,6 +753,7 @@ padding: 15px 25px 25px;
 display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 55px;
             }
             .esim_servicii_right_block_title{
                 border-radius: 10px;
@@ -770,6 +827,29 @@ display: flex;
 .esim_servicii_right_block_btn:hover{
     background: #fbdc51!important;
 }
+
+
+
+@media (max-width:1220px) {
+    #esim_servicii {
+   
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 55px 30px;
+}
+
+#esim_servicii_left {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#esim_servicii_right {
+    width: 80%;
+    margin-left: 10%;
+}
+    
+}
         </style>
         <div id="esim_servicii">
 
@@ -805,64 +885,104 @@ display: flex;
             <div id="esim_servicii_right">
 
 
-                <div class="esim_servicii_right_block">
-                    <div class="esim_servicii_right_block_title">
-                        FUN 50
-                    </div>
-                    <div class="esim_servicii_right_block_price">
-                        50 lei
-                    </div>
-                    <div class="esim_servicii_right_block_ul">
-                        <ul>
-                            <li>Nelimitat minute în rețea</li>
-                            <li>200 Minute naționale</li>
-                            <li>15 GB trafic Internet</li>
-                            <li>Nelimitat rețele sociale</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="esim_servicii_right_block_btn hand" onclick="redirectToPageSVG('https://my.moldtelecom.md/my-moldtelecom/')">
-                    Activează în aplicație
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                        <path d="M13.25 25.75C20.2916 25.75 26 20.0416 26 13C26 5.95837 20.2916 0.25 13.25 0.25C6.20837 0.25 0.5 5.95837 0.5 13C0.5 20.0416 6.20837 25.75 13.25 25.75Z" fill="black"/>
-                        <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
-                      </svg>
-                    </div>
-                    <div class="esim_servicii_right_block_link hand">
-                        Mai multe detalii
-                    </div>
+                                                        <div class="mtc_carousell carousell_4">
+
+                                                            <div class="carousell_blocks">
+                                                                <div class="esim_servicii_right_block">
+                                                                    <div class="esim_servicii_right_block_title">
+                                                                        FUN 50
+                                                                    </div>
+                                                                    <div class="esim_servicii_right_block_price">
+                                                                        50 lei
+                                                                    </div>
+                                                                    <div class="esim_servicii_right_block_ul">
+                                                                        <ul>
+                                                                            <li>Nelimitat minute în rețea</li>
+                                                                            <li>200 Minute naționale</li>
+                                                                            <li>15 GB trafic Internet</li>
+                                                                            <li>Nelimitat rețele sociale</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    
+                                                                    <div class="esim_servicii_right_block_btn hand" onclick="redirectToPageSVG('https://my.moldtelecom.md/my-moldtelecom/')">
+                                                                    Activează în aplicație
+                                                                    
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                                        <path d="M13.25 25.75C20.2916 25.75 26 20.0416 26 13C26 5.95837 20.2916 0.25 13.25 0.25C6.20837 0.25 0.5 5.95837 0.5 13C0.5 20.0416 6.20837 25.75 13.25 25.75Z" fill="black"/>
+                                                                        <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
+                                                                      </svg>
+                                                                    </div>
+                                                                    <div class="esim_servicii_right_block_link hand">
+                                                                        Mai multe detalii
+                                                                    </div>
+                                                                                        
+                                                                                    </div>
+                                                            </div>
                                         
-                                    </div>
-                                    <div class="esim_servicii_right_block">
-                                        <div class="esim_servicii_right_block_title" style="background-color: #6DA8FF;">
-                                            FUN 80
-                                        </div>
-                                        <div class="esim_servicii_right_block_price">
-                                            80 lei
-                                        </div>
-                                        <div class="esim_servicii_right_block_ul">
-                                            <ul>
-                                                <li>Nelimitat minute în rețea</li>
-                                                <li>250 Minute naționale</li>
-                                                <li>25 GB trafic Internet</li>
-                                                <li>Nelimitat rețele sociale</li>
-                                            </ul>
-                                        </div>
+                                                            <div class="carousell_blocks">
+                                                                <div class="esim_servicii_right_block">
+                                                                    <div class="esim_servicii_right_block_title" style="background-color: #6DA8FF;">
+                                                                        FUN 80
+                                                                    </div>
+                                                                    <div class="esim_servicii_right_block_price">
+                                                                        80 lei
+                                                                    </div>
+                                                                    <div class="esim_servicii_right_block_ul">
+                                                                        <ul>
+                                                                            <li>Nelimitat minute în rețea</li>
+                                                                            <li>250 Minute naționale</li>
+                                                                            <li>25 GB trafic Internet</li>
+                                                                            <li>Nelimitat rețele sociale</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    
+                                                                    <div class="esim_servicii_right_block_btn hand" onclick="redirectToPageSVG('https://my.moldtelecom.md/my-moldtelecom/')">
+                                                                    Activează în aplicație
+                                                                    
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                                        <path d="M13.25 25.75C20.2916 25.75 26 20.0416 26 13C26 5.95837 20.2916 0.25 13.25 0.25C6.20837 0.25 0.5 5.95837 0.5 13C0.5 20.0416 6.20837 25.75 13.25 25.75Z" fill="black"/>
+                                                                        <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
+                                                                      </svg>
+                                                                    </div>
+                                                                    <div class="esim_servicii_right_block_link hand">
+                                                                        Mai multe detalii
+                                                                    </div>
+                                                                                        
+                                                                                    </div>
+                                                            </div>
                                         
-                                        <div class="esim_servicii_right_block_btn hand" onclick="redirectToPageSVG('https://my.moldtelecom.md/my-moldtelecom/')">
-                                        Activează în aplicație
                                         
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                                            <path d="M13.25 25.75C20.2916 25.75 26 20.0416 26 13C26 5.95837 20.2916 0.25 13.25 0.25C6.20837 0.25 0.5 5.95837 0.5 13C0.5 20.0416 6.20837 25.75 13.25 25.75Z" fill="black"/>
-                                            <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
-                                          </svg>
-                                        </div>
-                                        <div class="esim_servicii_right_block_link hand">
-                                            Mai multe detalii
-                                        </div>
+                                                            
+                                            
                                                             
                                                         </div>
+                                             
+                                            
+                                            
+                                                    <script>
+                                                        $('.carousell_4').slick({
+                                                            arrows: true,
+                                                            dots: false,
+                                                            infinite: true,
+                                                            slidesToShow: 2,
+                                                            slidesToScroll: 1,
+                                                            autoplay: true,
+                                                            autoplaySpeed: 2500,
+                                                            //centerMode: true,
+                                                            //variableWidth: true,
+                                                            //adaptiveHeight: true,
+                                                            responsive: [
+                    {
+                        breakpoint: 1221,
+                        settings: {
+                            slidesToShow: 1
+
+                        }
+                    }
+                ]
+                                                        });
+                                            
+                                                    </script>
             </div>
         </div>
 
@@ -1000,6 +1120,28 @@ display: flex;
 }
 .esim_pachete_right_block_btn:hover{
     background: #fbdc51!important;
+}
+
+
+@media (max-width:1220px) {
+    #esim_pachete {
+   
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 55px 30px;
+}
+
+#esim_pachete_left {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#esim_pachete_right {
+    width: 80%;
+    margin-left: 10%;
+}
+    
 }
         </style>
         <div id="esim_pachete">
@@ -1165,28 +1307,14 @@ display: flex;
                     //variableWidth: true,
                     //adaptiveHeight: true,
                     responsive: [
-                        {
-                            breakpoint: 1351,
-                            settings: {
-                                slidesToShow: 3
-    
-                            }
-                        },
-                        {
-                            breakpoint: 951,
-                            settings: {
-                                slidesToShow: 2
-    
-                            }
-                        },
-                        {
-                            breakpoint: 651,
-                            settings: {
-                                slidesToShow: 1
-    
-                            }
+                    {
+                        breakpoint: 1221,
+                        settings: {
+                            slidesToShow: 1
+
                         }
-                    ]
+                    }
+                ]
                 });
     
             </script>
@@ -1317,6 +1445,50 @@ font-style: normal;
 font-weight: 400;
 line-height: 18px; /* 150% */
 text-decoration-line: underline;
+    }
+
+
+    @media (max-width:1220px) {
+        #esim_activezi {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+#esim_activezi_right {
+    width: 100%;
+    margin-top: 30px;
+}
+   
+
+#esim_activezi_left {
+    width: 100%;
+    margin-top: 60px;
+}
+
+#esim_activezi_right_hiden_img {
+    width: 48%;
+    
+}
+#esim_activezi_right_hiden{
+    height: auto;
+
+}
+#esim_activezi_right_hiden_right {
+    width: 50%;
+}
+.esim_activezi_right_hiden_btn {
+    box-sizing: border-box;
+}
+#esim_activezi_right_img {
+    width: 100%;
+    height: auto;
+    margin: 75px 0;
+}
+#esim_activezi_left_download {
+    justify-content: center;
+    gap: 50px;
+}
     }
     </style>
 
@@ -1636,6 +1808,31 @@ line-height: 40px; /* 100% */
 height: 90px;
     display: flex;
     align-items: center;
+            }
+
+
+
+            @media (max-width:1220px) {
+                #esim_fizic {
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+             
+
+#esim_fizic_left {
+    width: 100%;
+}
+#esim_fizic_right {
+    width: 100%;
+    margin-top: 20px;
+}
+#esim_fizic_right_steps_block {
+    justify-content: center;
+    margin-bottom: 50px;
+}
             }
     </style>
 
