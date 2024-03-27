@@ -107,7 +107,35 @@ body::-webkit-scrollbar {
     font-weight: 500;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "MTC-Futura New Cond";
+    src: url("../webkit/fonts/MTC-FuturaNewCondExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }  
+
+  @font-face {
+    font-family: "MTC-Futura New Cond";
+    src: url("../webkit/fonts/MTC-FuturaNewCondBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }  
   
+  @font-face {
+    font-family: "MTC-Futura New Cond";
+    src: url("../webkit/fonts/MTC-FuturaNewCondMedium.ttf") format("truetype");
+    font-weight: 450;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "MTC-Futura New Cond";
+    src: url("../webkit/fonts/MTC-FuturaNewCondBook.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
   .page_content {
     max-width: 100vw !important;
     width: 100% !important;
