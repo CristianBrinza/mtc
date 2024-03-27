@@ -16,6 +16,15 @@
 
 ### Export to production use:
 
+
+#### Landing:
+
 ```
-python3 dev/toProduction.py
+python3 dev/LandingToProduction.py <name>
+```
+
+#### Directmail:
+
+```
+python3 dev/DirectMailToProduction.py <name>
 ```
