@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../webkit/mtc_webkit_v2.css" rel="stylesheet" type="text/css" />
     <script src="../webkit/mtc_webkit_v2.js"></script>
 
 
     <style>
+        ul{line-height: 1.3;}
         .esim_main {
             max-width: 1180px;
             margin: 0 auto;
@@ -588,13 +588,16 @@ display: flex;
         </div>
 
         <style>
+            #esim_detalii_btn{
+                width: 100%;
+                display: flex;
+            }
             .esim_btn_detalii {
                 border-radius: 10px;
                 background: #F7CF16;
-                display: inline-flex;
+                display: flex;
                 gap: 30px;
-                margin: 20px 50% 10px 50%;
-                transform: translate(-50%, 0);
+                margin: 20px auto 10px auto;
                 color: #101010;
                 text-align: center;
                 font-family: "MTC-Futura New";
@@ -607,12 +610,15 @@ display: flex;
                 justify-content: center;
                 padding: 10px 25px;
                 box-sizing: border-box;
+                width: auto;
+                flex: 0 1 auto;
             }
 
             .esim_btn_detalii:hover {
                 background: #fbdc51;
             }
         </style>
+        <div id="esim_detalii_btn">
         <div class="esim_btn_detalii hand" onclick="popoup('1')">
             Detalii
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -624,7 +630,7 @@ display: flex;
                     fill="#F7CF16" />
             </svg>
         </div>
-
+    </div>
 
         <div class="esim_title">
             Pachete cu <span class="esim_title_red">servicii incluse</span>
@@ -1490,6 +1496,20 @@ text-decoration-line: underline;
     gap: 50px;
 }
     }
+
+
+    @media (max-width:600px){
+        #esim_activezi_right_hiden{
+flex-direction: column;
+        }
+        #esim_activezi_right_hiden_right {
+    width: 100%;
+}
+#esim_activezi_right_hiden_img {
+    width: 70%;
+    margin-left: -10%;
+}
+    }
     </style>
 
 <div id="esim_activezi">
@@ -1550,7 +1570,7 @@ Accesează WEB sau descarcă aplicația
                     </div>
 
 
-                    <div class="esim_activezi_right_hiden_btn hand">
+                    <div class="esim_activezi_right_hiden_btn hand" onclick="popoup('2')">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="24" cy="24" r="24" fill="#101010"/>
 <path d="M22.2471 27.0109C22.3305 26.9276 22.4971 26.7443 22.7471 26.4609C22.9971 26.1609 23.2721 25.8359 23.5721 25.4859C23.8721 25.1193 24.1638 24.7609 24.4471 24.4109C24.7305 24.0443 24.9471 23.7526 25.0971 23.5359C25.3305 23.2026 25.5471 22.7943 25.7471 22.3109C25.9638 21.8276 26.0721 21.3443 26.0721 20.8609C26.0721 20.1109 25.8305 19.5026 25.3471 19.0359C24.8805 18.5693 24.2971 18.3359 23.5971 18.3359C23.1805 18.3359 22.8055 18.4193 22.4721 18.5859C22.1555 18.7359 21.8805 18.9443 21.6471 19.2109C21.4305 19.4609 21.2638 19.7526 21.1471 20.0859C21.0305 20.4193 20.9638 20.7609 20.9471 21.1109H17.5971C17.6305 20.2609 17.7971 19.4943 18.0971 18.8109C18.4138 18.1276 18.8305 17.5443 19.3471 17.0609C19.8638 16.5609 20.4721 16.1859 21.1721 15.9359C21.8721 15.6693 22.6305 15.5359 23.4471 15.5359C24.4138 15.5359 25.2638 15.6859 25.9971 15.9859C26.7305 16.2859 27.3388 16.6859 27.8221 17.1859C28.3221 17.6859 28.6971 18.2526 28.9471 18.8859C29.1971 19.5193 29.3221 20.1693 29.3221 20.8359C29.3221 21.4859 29.2221 22.0859 29.0221 22.6359C28.8388 23.1859 28.5971 23.7026 28.2971 24.1859C27.9971 24.6693 27.6721 25.1193 27.3221 25.5359C26.9721 25.9359 26.6305 26.3109 26.2971 26.6609L23.4221 29.7859H29.4471V32.5859H17.3471L22.2471 27.0109Z" fill="#F7CF16"/>
@@ -1670,6 +1690,11 @@ Achită serviciile și Primește QR-Code-ul pe email
     }
     function step_activezi(id){
 document.getElementById('esim_activezi_right_hiden_img').src = 'assets/esim/images/activezi_'+id+'.png';
+if (window.innerWidth <= 600) {
+    document
+    .getElementById('esim_activezi_right_hiden_img')
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+}
 
     }
 
@@ -1833,6 +1858,19 @@ height: 90px;
     justify-content: center;
     margin-bottom: 50px;
 }
+
+@media (max-width:600px) {
+    #esim_fizic_right_steps_block {
+    justify-content: space-around;
+    gap:0;
+
+}
+.esim_fizic_right_steps {
+   
+    width: 60px;
+    height: 60px;
+}
+}
             }
     </style>
 
@@ -1982,7 +2020,7 @@ box-sizing: border-box;
         FAQ
     </div>
 
-    <div class="esim_bottom_block hand">
+    <div class="esim_bottom_block hand" onclick="popoup('2')">
         Lista telefoanelor cu eSIM
     </div>
 
@@ -2033,9 +2071,78 @@ box-sizing: border-box;
     
     <div class="mtc_popup_block_title">Dispozitivele compatibile cu eSIM:</div>
     <ul>
-        
-        
-        </ul>
+        <li>Apple iPhone 11</li>
+        <li>Apple iPhone 11 Pro</li>
+        <li>Apple iPhone 11 Pro Max</li>
+        <li>Apple iPhone 12</li>
+        <li>Apple iPhone 12 mini</li>
+        <li>Apple iPhone 12 Pro</li>
+        <li>Apple iPhone 12 Pro Max</li>
+        <li>Apple iPhone 13</li>
+        <li>Apple iPhone 13 mini</li>
+        <li>Apple iPhone 13 Pro</li>
+        <li>Apple iPhone 13 Pro Max</li>
+        <li>Apple iPhone 14</li>
+        <li>Apple iPhone 14 Plus</li>
+        <li>Apple iPhone 14 Pro</li>
+        <li>Apple iPhone 14 Pro Max</li>
+        <li>Apple iPhone 15</li>
+        <li>Apple iPhone 15 Plus</li>
+        <li>Apple iPhone 15 Pro</li>
+        <li>Apple iPhone 15 Pro Max</li>
+        <li>Apple iPhone SE</li>
+        <li>Apple iPhone XR</li>
+        <li>Apple iPhone Xs</li>
+        <li>Apple iPhone Xs Max</li>
+        <li>Google Pixel 3</li>
+        <li>Google Pixel 3 XL</li>
+        <li>Google Pixel 3a</li>
+        <li>Google Pixel 3A XL</li>
+        <li>Google Pixel 4</li>
+        <li>Google Pixel 4 XL</li>
+        <li>Google Pixel 4a</li>
+        <li>Google Pixel 5</li>
+        <li>Google Pixel 5a 5G</li>
+        <li>Google Pixel 6</li>
+        <li>Google Pixel 6 Pro</li>
+        <li>Google Pixel 6a</li>
+        <li>Google Pixel 7</li>
+        <li>Google Pixel 7 Pro</li>
+        <li>Google Pixel 7a</li>
+        <li>Onoare 90</li>
+        <li>Huawei Mate 40 Pro</li>
+        <li>Huawei P40</li>
+        <li>Huawei P40 Pro</li>
+        <li>Samsung Galaxy Note20</li>
+        <li>Samsung Galaxy Note20 Ultra</li>
+        <li>Samsung Galaxy S20</li>
+        <li>Samsung Galaxy S20 Plus</li>
+        <li>Samsung Galaxy S20 Ultra</li>
+        <li>Samsung Galaxy S20+</li>
+        <li>Samsung Galaxy S21</li>
+        <li>Samsung Galaxy S21 Ultra</li>
+        <li>Samsung Galaxy S21+</li>
+        <li>Samsung Galaxy S22</li>
+        <li>Samsung Galaxy S22 Ultra</li>
+        <li>Samsung GALAXY S22+</li>
+        <li>Samsung Galaxy S23</li>
+        <li>Samsung GALAXY S23 ULTRA</li>
+        <li>Samsung Galaxy S23+</li>
+        <li>Samsung Galaxy Z Flip4</li>
+        <li>Samsung Galaxy Z Flip</li>
+        <li>Samsung Galaxy Z Flip3</li>
+        <li>Samsung Galaxy Z Flip5</li>
+        <li>Samsung Galaxy Z Fold2</li>
+        <li>Samsung Galaxy Z Fold3</li>
+        <li>Samsung Galaxy Z Fold4</li>
+        <li>Xiaomi 12T Pro</li>
+        <li>Xiaomi 13 LITE</li>
+        <li>Xiaomi 13</li>
+        <li>Xiaomi 13 Pro</li>
+        <li>Xiaomi 13T</li>
+        <li>Xiaomi 13T Pro</li>
+      </ul>
+      
     </div>
     </div>
 
@@ -2044,13 +2151,68 @@ box-sizing: border-box;
         <div class="mtc_popup_close_button" onclick="popoup('faq')"><svg class="popup_block_inside_svg" fill="none" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
         
         <div class="mtc_popup_block_title">FAQ</div>
-        <ul>
-            
-            
-            </ul>
+       
+       <b><li> Ce trebuie să știu înainte să înlocuiesc SIM-ul meu actual cu eSIM?</li></b><br><br>
+       &nbsp;&nbsp;&nbsp;Asigură-te că înțelegi că lista ta de contacte și datele existente pe SIM-ul fizic nu se vor transfera automat pe eSIM. Este recomandat să faci o copie a acestora înainte de înlocuirea SIM-ului.
+<br><br><br>
+<b><li>Cât costă eSIM?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Când activezi un număr nou, eSIM-ul este oferit gratis. Dacă treci de la SIM la eSIM pentru prima dată, nu se percep costuri adiționale, însă dacă ai nevoie de o resetare (în cazul pierderii telefonului, de exemplu), taxa de restabilire va fi de doar 25 lei. 
+<br><br><br>
+<b><li>Unde pot obține un eSIM pentru dispozitivul meu?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Magazinele Moldtelecom: Poți obține un eSIM la orice magazin Moldtelecom. Asigură-te că ai un dispozitiv compatibil cu eSIM și un document de identitate la tine.<br>
+&nbsp;&nbsp;&nbsp;Prin aplicația My Moldtelecom pentru clienți noi: Dacă ești client nou și dorești un număr mobil prepay, poți solicita un eSIM direct în aplicația My Moldtelecom, accesând secțiunea "Adaugă număr nou".<br>
+&nbsp;&nbsp;&nbsp;Prin intermediul aplicației My Moldtelecom pentru clienți existenți: Clienții existenți pot comanda înlocuirea unei cartele SIM standard cu un eSIM prin intermediul aplicației My Moldtelecom, accesând secțiunea "Treci la eSIM". Dacă treci de la SIM la eSIM pentru prima dată, nu se percep costuri adiționale, însă dacă ai nevoie de o resetare, taxa de restabilire va fi de doar 25 lei.<br>
+<br><br><br>
+<b><li>Cum să utilizezi serviciul de eSIM?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Pentru a descărca profilul eSIM pe dispozitivul tău, utilizează un cod QR. Pentru a scana codul QR, folosește camera smartphone-ului sau scannerul de cod QR dintr-o secțiune specială a dispozitivului 
+<br><br>&nbsp;&nbsp;&nbsp;iOS: Accesați setările dispozitivului dvs., selectați Date celulare > Adăugați plan celular și îndreptați camera către codul QR.
+<br><br>&nbsp;&nbsp;&nbsp;Android: accesați setările dispozitivului în secțiunea Conexiune > Gestionarea cartelei SIM. Faceți clic pe Adăugați plan mobil, selectați Adăugați cu cod QR și îndreptați camera către codul QR. Setările pot varia în funcție de dispozitiv.
+<br><br><br>
+<b><li>Pot folosi eSIM și SIM obișnuit concomitent, în același telefon?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Da, dacă ai un telefon compatibil, poți utiliza ambele cartele SIM cu funcția de Dual SIM. eSIM-ul oferă aceleași posibilități ca un SIM obișnuit. Doar selectează opțiunile pentru aceste 2 conexiuni.
+<br><br><br>
+<b><li>Câte numere de telefon pot instala pe dispozitivul meu mobil compatibil eSIM?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;În scenariile testate de noi, am instalat până la 5 profile de eSIM. Numărul maxim, însă, depinde de capacitatea de stocare a fiecărui producător de dispozitive mobile. Chiar dacă vei avea mai multe numere de telefon instalate, doar pe unul dintre ele îl vei putea seta ca activ la un moment dat.
+<br><br><br>
+<b><li>Cât timp este valabil QR codul primit?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Codul QR de activare eSIM nu are termen de valabilitate, dar poate fi utilizat doar până la anularea serviciilor. Însă, odată scanat, acesta nu mai poate fi reutilizat. După ce ai obținut codul QR, îți recomandăm să instalezi în telefon profilul eSIM cât mai curând.
+<br><br><br>
+<b><li>Serviciile pentru care este disponibilă cartela digitală eSIM</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Cartela digitală eSIM este disponibilă împreună cu serviciile de telefonie mobilă, atât pentru persoane fizice. Poți utiliza eSIM cu următoarele servicii:
+
+<ul>
+<li>Număr Mobil Prepay</li>
+<li>Abonament Mobil voce</li>
+<li>Abonament Internet mobil</li>
+</ul>
+<br>
+<b><li>Este posibil să migrez de la cartela digitală eSIM la abonament?</li></b><br><br>
+Da, pe pagina moldtelecom.md/telefonie mobilă puteți alege un abonament contractual și îl puteți programa online prin aplicația My Moldtelecom, secțiunea "solicită migrare la abonament"
+<br><br><br>
+<b><li>Ce trebuie să fac dacă nu pot activa eSIM-ul?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;În primul rând, asigură-te că:
+<ul></ul>
+<li>Ești conectat la Wi-Fi prin telefon;</li>
+<li>Ai un cod QR nou pe care nu l-ai mai utilizat anterior.</li>
+<li>În cazul în care întâmpini o eroare necunoscută, te rugăm să contactezi Serviciul Clienți, la numărul 1181, pe chat Moldtelecom sau să vizitezi orice magazin Moldtelecom.</li>
+&nbsp;&nbsp;&nbsp;Dacă toate condițiile sunt asigurate, ar trebui să poți activa cartela eSIM cu succes.
+<br><br><br>
+<b><li>Ce trebuie să fac dacă am renunțat la serviciile Moldtelecom?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;După ce serviciile Moldtelecom au fost anulate, intră în meniul telefonului tău la setările de rețea și șterge profilul eSIM atribuit numărului tău.
+<br><br><br>
+<b><li>Cum să transfer eSIM-ul existent dacă mi-am luat un telefon nou?</li></b><br><br>
+<ul>
+<li>Dacă noul telefon este compatibil eSIM, este nevoie să obții un nou cod QR pentru numărul tău, accesând My Moldtelecom (sectiunea eSIM). Deoarece la generarea unui nou cod QR pentru eSIM vei primi o parolă prin SMS, este necesar să ai numărul tău activ pe telefonul vechi. După ce codul QR nou este generat, trebuie să îl scanezi cu telefonul tău care este conectat la o rețea WiFi. În acel moment cartela eSIM devine activă în noul tău telefon, iar în telefonul vechi se va dezactiva automat.</li>
+    <li>Însă dacă ai nevoie de o cartelă SIM fizică sau în telefonul vechi ai dezactivat sau șters cartela eSIM existentă, vino în unul din magazinele Moldtelecom.</li>
+</ul>
+    <br><br><br>
+<b><li>Ce se întâmplă dacă șterg profilul de eSIM din telefon?</li></b><br><br>
+&nbsp;&nbsp;&nbsp;Din păcate, nu vei mai avea acces la serviciu pentru numărul respective. Înainte de a șterge profilul de eSIM, asigură-te că ai o conexiune Wi-Fi pentru reinstalare sau un alt SIM de înlocuire.
+
         </div>
         </div>
 
+    
 
 </body>
 
