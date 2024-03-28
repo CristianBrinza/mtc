@@ -58,7 +58,7 @@
     </style>
     <div class="esim_main">
 
-
+    
 
 <style>
 
@@ -459,7 +459,7 @@ display: flex;
                 font-size: 128px;
                 font-style: normal;
                 font-weight: 700;
-                height: 80px;
+                height: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -796,6 +796,7 @@ font-weight: 800;
 line-height: 70%; /* 56px */
 width: 100%;
 margin-top: -10px;
+text-transform: uppercase;
             }
             .esim_servicii_right_block_link{
                 color: #414141;
@@ -814,7 +815,7 @@ width: 100%;
 font-family: "MTC-Futura New";
 font-size: 20px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: 20px; /* 100% */
             }
 
@@ -1114,6 +1115,7 @@ font-weight: 800;
 line-height: 70%; /* 56px */
 width: 100%;
 margin-top: -10px;
+text-transform: uppercase;
             }
             .esim_pachete_right_block_link{
                 color: #414141;
@@ -1132,7 +1134,7 @@ width: 100%;
 font-family: "MTC-Futura New";
 font-size: 20px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: 20px; /* 100% */
             }
 
@@ -1193,8 +1195,10 @@ display: flex;
         width: 96%;
     }
     
+.esim_pachete_right_block_price{
+    font-size: 60px;
 }
-    
+  
 }
         </style>
         <div id="esim_pachete">
@@ -1502,6 +1506,9 @@ text-decoration-line: underline;
 
 
     @media (max-width:1220px) {
+        #esim_activezi_left_title{
+            text-align: center;
+        }
         #esim_activezi {
     justify-content: space-between;
     flex-direction: column;
@@ -1590,7 +1597,7 @@ flex-direction: column;
 </svg>
                 </div>
 
-                <div class="esim_activezi_left_btn hand" id="esim_activezi_left_btn_costume" style="background: #F7CF16;" onclick="show_activezi()">
+                <div class="esim_activezi_left_btn hand" id="esim_activezi_left_btn_costume" style="background: #F7CF16; color: #000;" onclick="show_activezi()">
                     Vezi pașii
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
   <path d="M26 13C26 5.95837 20.2916 0.249999 13.25 0.249999C6.20837 0.25 0.499999 5.95837 0.499999 13C0.5 20.0416 6.20837 25.75 13.25 25.75C20.2916 25.75 26 20.0416 26 13Z" fill="black"/>
@@ -1900,6 +1907,12 @@ height: 90px;
 
 
             @media (max-width:1220px) {
+                #esim_fizic_right_btn {
+    margin: 25px auto;
+}
+                #esim_fizic_right_title{
+                    text-align: center;
+                }
                 #esim_fizic {
     margin-top: 30px;
     width: 100%;
@@ -2532,7 +2545,7 @@ box-sizing: border-box;
        </ul>
        <br><br><br>
         <b><li>  Este posibil să migrez de la cartela digitală eSIM la abonament?</li></b><br><br>
-        &nbsp;&nbsp;&nbsp; Da, pe pagina moldtelecom.md/Abonamente_Telefonie_Mobila poți alege un abonament și îl poți programa online prin aplicația My Moldtelecom, secțiunea „Solicită migrare la abonament”.
+        &nbsp;&nbsp;&nbsp; Da, pe pagina <a href="https:moldtelecom.md/Abonamente_Telefonie_Mobila">Telefonie Mobila</a> poți alege un abonament și îl poți programa online prin aplicația My Moldtelecom, secțiunea „Solicită migrare la abonament”.
         <br><br><br>
         <b><li> Ce trebuie să fac dacă nu pot activa eSIM?</li></b><br><br>
         &nbsp;&nbsp;&nbsp;În primul rând, asigură-te că:
@@ -2548,9 +2561,12 @@ box-sizing: border-box;
         &nbsp;&nbsp;&nbsp;După ce serviciile Moldtelecom au fost anulate, intră în meniul telefonului tău la setările de rețea și șterge profilul eSIM atribuit numărului tău.
         <br><br><br>
         <b><li> Cum să transfer eSIM-ul existent, dacă mi-am luat un telefon nou?</li></b><br><br>
-        1. Dacă noul telefon este compatibil cu eSIM, este nevoie să obții un nou QR cod pentru numărul tău, accesând My Moldtelecom (sectiunea eSIM). Deoarece, la generarea unui nou cod QR pentru eSIM, vei primi o parolă prin SMS și este necesar să ai numărul tău activ pe telefonul vechi. După ce codul QR nou este generat, trebuie să îl scanezi cu telefonul tău care este conectat la o rețea Wi-Fi. În acel moment cartela eSIM devine activă în noul tău telefon, iar în telefonul vechi se va dezactiva automat.
-        2. Însă, dacă ai nevoie de o cartelă SIM fizică sau în telefonul vechi ai dezactivat sau șters cartela eSIM existentă, vino în unul din magazinele Moldtelecom.
         
+        <ul>
+       <li>Dacă noul telefon este compatibil cu eSIM, este nevoie să obții un nou QR cod pentru numărul tău, accesând My Moldtelecom (sectiunea eSIM). Deoarece, la generarea unui nou cod QR pentru eSIM, vei primi o parolă prin SMS și este necesar să ai numărul tău activ pe telefonul vechi. După ce codul QR nou este generat, trebuie să îl scanezi cu telefonul tău care este conectat la o rețea Wi-Fi. În acel moment cartela eSIM devine activă în noul tău telefon, iar în telefonul vechi se va dezactiva automat.<br><br></li>
+    <li>Însă, dacă ai nevoie de o cartelă SIM fizică sau în telefonul vechi ai dezactivat sau șters cartela eSIM existentă, vino în unul din magazinele Moldtelecom.</li>
+    </ul>
+    <br>
         <b><li>  Ce se întâmplă, dacă șterg profilul de eSIM din telefon?</li></b><br><br>
         &nbsp;&nbsp;&nbsp;Din păcate, nu vei mai avea acces la serviciu pentru numărul respectiv. Înainte de a șterge profilul de eSIM, asigură-te că ai o conexiune Wi-Fi pentru reinstalare sau un alt SIM de înlocuire.
         </div>
