@@ -49,6 +49,12 @@
         }
 
         }
+        @media (max-width:400px) {
+        .carousell_4, .carousell_2{
+    width: 140%!important;
+    margin-left: -20%!important;
+}
+        }
     </style>
     <div class="esim_main">
 
@@ -134,6 +140,10 @@ display: flex;
 
 #esim_hero_right {
     width: 100%;
+    margin-left:0;
+}
+#esim_hero_right_title, #esim_hero_right_subtitle{
+    text-align: center;
 }
         
     }
@@ -854,6 +864,9 @@ display: flex;
     width: 80%;
     margin-left: 10%;
 }
+.esin_box_description{
+width: 80%;
+}
     
 }
 
@@ -868,6 +881,14 @@ display: flex;
         width: 96%;
     }
     
+}
+
+@media (max-width:440px) {
+    .esim_servicii_right_block_title{
+        width: 90%;
+        font-size: 9vw;
+    }
+
 }
         </style>
         <div id="esim_servicii">
@@ -931,7 +952,7 @@ display: flex;
                                                                         <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
                                                                       </svg>
                                                                     </div>
-                                                                    <div class="esim_servicii_right_block_link hand">
+                                                                    <div class="esim_servicii_right_block_link hand" onclick="popoup('detaliiabonament')">
                                                                         Mai multe detalii
                                                                     </div>
                                                                                         
@@ -963,7 +984,7 @@ display: flex;
                                                                         <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
                                                                       </svg>
                                                                     </div>
-                                                                    <div class="esim_servicii_right_block_link hand">
+                                                                    <div class="esim_servicii_right_block_link hand" onclick="popoup('detaliiabonament')">
                                                                         Mai multe detalii
                                                                     </div>
                                                                                         
@@ -1240,7 +1261,7 @@ display: flex;
                                 <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
                               </svg>
                             </div>
-                            <div class="esim_pachete_right_block_link hand">
+                            <div class="esim_pachete_right_block_link hand" onclick="popoup('detaliiabonament')">
                                 Mai multe detalii
                             </div>
                                                 
@@ -1274,7 +1295,7 @@ display: flex;
                                 <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
                               </svg>
                             </div>
-                            <div class="esim_pachete_right_block_link hand">
+                            <div class="esim_pachete_right_block_link hand" onclick="popoup('detaliiabonament')">
                                 Mai multe detalii
                             </div>
                                                 
@@ -1311,7 +1332,7 @@ display: flex;
                                 <path d="M18.0106 11.5265H15.1267V5.49091C15.1267 5.07998 14.7928 4.74609 14.3819 4.74609H12.1254C11.7145 4.74609 11.3806 5.07998 11.3806 5.49091V11.5265H8.4967C7.92065 11.5265 7.56476 12.1503 7.85094 12.6456L10.2285 16.7659L12.6061 20.8863C12.8922 21.3853 13.6114 21.3853 13.8976 20.8863L16.2751 16.7659L18.6527 12.6456C18.9389 12.1466 18.5793 11.5265 18.0069 11.5265H18.0106Z" fill="#F7CF16"/>
                               </svg>
                             </div>
-                            <div class="esim_pachete_right_block_link hand">
+                            <div class="esim_pachete_right_block_link hand" onclick="popoup('detaliiabonament')">
                                 Mai multe detalii
                             </div>
                                                 
@@ -1545,6 +1566,10 @@ flex-direction: column;
    flex-direction: column;
     gap: 15px;
 }
+
+#esim_activezi_right_img{
+    margin:  10px 0 0 0;
+}
     
 }
     </style>
@@ -1572,7 +1597,7 @@ flex-direction: column;
   <path d="M11.7765 8.23942L11.7765 11.1233L5.74091 11.1233C5.32998 11.1233 4.99609 11.4572 4.99609 11.8681L4.99609 14.1246C4.99609 14.5355 5.32998 14.8694 5.74091 14.8694L11.7765 14.8694L11.7765 17.7533C11.7765 18.3293 12.4003 18.6852 12.8956 18.3991L17.0159 16.0215L21.1363 13.6439C21.6353 13.3578 21.6353 12.6386 21.1363 12.3524L17.0159 9.97488L12.8956 7.59733C12.3966 7.31114 11.7765 7.67071 11.7765 8.24309L11.7765 8.23942Z" fill="#F7CF16"/>
 </svg>
                 </div>
-                <div class="esim_activezi_left_btn hand" onclick="redirectToPageSVG('https://mtc.md/my-mtc')">
+                <div class="esim_activezi_left_btn hand" onclick="window.location='https://mtc.md/my-mtc'">
                     Descarcă aplicația
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
   <path d="M13.25 25.75C20.2916 25.75 26 20.0416 26 13C26 5.95837 20.2916 0.25 13.25 0.25C6.20837 0.25 0.5 5.95837 0.5 13C0.5 20.0416 6.20837 25.75 13.25 25.75Z" fill="#F7CF16"/>
@@ -1582,8 +1607,8 @@ flex-direction: column;
 
 
                 <div id="esim_activezi_left_download">
-                    <img class="zoom hand" src="assets/esim/images/img4.png" alt="e-sim">
-                    <img class="zoom hand" src="assets/esim/images/img5.png" alt="e-sim">
+                    <img class="zoom hand" src="assets/esim/images/img4.png" alt="e-sim" onclick="window.location='https://mtc.md/my-mtc'">
+                    <img class="zoom hand" src="assets/esim/images/img5.png" alt="e-sim" onclick="window.location='https://mtc.md/my-mtc'">
                     
                     </div>
         </div>
@@ -1909,6 +1934,13 @@ height: 90px;
 }
 }
             }
+
+            @media (max-width:400px) {
+            #esim_fizic_right_gray_text{
+                font-size: 25px;
+                line-height: 1;
+            }
+            }
     </style>
 
 <div id="esim_fizic">
@@ -1923,7 +1955,7 @@ height: 90px;
                 </div>
 
 
-                <div class="esim_btn hand" id="esim_fizic_right_btn" onclick="redirectToPageSVG('https://mtc.md/my-mtc')">
+                <div class="esim_btn hand" id="esim_fizic_right_btn" onclick="window.location='https://mtc.md/my-mtc'">
                     Descarcă aplicația
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                             <path
@@ -2016,6 +2048,18 @@ if (last_step_btn != ' ') {
                 border-radius: 10px;
                 margin: 30px 0 60px 0;
             }
+
+            @media (max-width:1220px) {
+                #esim_video {
+                height: 300px;
+                }
+            }
+
+            @media (max-width:600px) {
+                #esim_video {
+                height: 50vw;
+                }
+            }
         </style>
         <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen="" frameborder="0" id="esim_video" src="https://www.youtube.com/embed/"
@@ -2050,6 +2094,22 @@ padding: 30px 10px;
 box-sizing: border-box;
 }
 
+
+@media (max-width:600px) {
+    .esim_bottom_block {
+   
+    font-size: 30px;
+
+}
+}
+@media (max-width:400px) {
+    .esim_bottom_block {
+   
+    font-size: 20px;
+
+}
+    
+}
 </style>
 
 <div id="esim_bottom">
@@ -2083,21 +2143,265 @@ box-sizing: border-box;
 
 
     <div class="mtc_popup_block" id="mtc_popup_block_1" style="display: none;">
-<div class="mtc_popup_block_inside">
-<div class="mtc_popup_close_button" onclick="popoup('1')"><svg class="popup_block_inside_svg" fill="none" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+        <div class="mtc_popup_block_inside">
+        <div class="mtc_popup_close_button" onclick="popoup('1')"><svg class="popup_block_inside_svg" fill="none" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+        
+        <div class="mtc_popup_block_title"></div>
+        <ol>
+        <li> La conectare clientul va primi bonus inițial în minute nelimitate spre rețeaua fixă și mobilă MTC, minute către alți operatori naționali, trafic Internet, valabile 15 zile de la activarea cartelei.</li>
+        <br>
+        <li>  Relația dintre minute spre rețeaua fixă și mobilă MTC, minute către alți operatori naționali  și Trafic internet este „ȘI”.</li>
+        <br>
+        <li> După expirarea bonusului inițial clientul va fi tarifat din contul creditului disponibil în contul său.</li>
+        <br>
+        <li> Traficul Internet va fi la viteza maximă download și la viteza de până la 512 kbps upload - în dependență de tehnologie.</li>
+        </ol>
+        </div>
+        </div>
 
-<div class="mtc_popup_block_title"></div>
-<ol>
-<li> La conectare clientul va primi bonus inițial în minute nelimitate spre rețeaua fixă și mobilă MTC, minute către alți operatori naționali, trafic Internet, valabile 15 zile de la activarea cartelei.</li>
+
+    <div class="mtc_popup_block" id="mtc_popup_block_detaliiabonament" style="display: none;">
+        <div class="mtc_popup_block_inside">
+        <div class="mtc_popup_close_button" onclick="popoup('detaliiabonament')"><svg class="popup_block_inside_svg" fill="none" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+        
+
+        <table class="mtc_popup_block_table" style="text-align: center;">
+            <thead>
+                <tr>
+                    <td><span>Denumirea</span></td>
+                    <td><span>Suma Suplinită lei</span></td>
+                    <td><span>Valabilitate</span></td> 
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   <td> <span><span>FUN</span>&nbsp;<span style="color:#2980b9;"><strong>50</strong></span></span></td>
+                    <td><span>50-79</span></td>
+                    <td><span>21 zile</span></td>
+                   
+                </tr>
+                <tr>
+                    <td><span><span>FUN&nbsp;</span><span style="color:#f39c12;"><strong>80</strong></span></span></td>
+                    <td><span>80-99</span></td>
+                    <td><span>21 zile</span></td>
+                </tr>
+                <tr>
+                    <td><span><span>FUN&nbsp;</span><span style="color:#DC7EB3;"><strong>100</strong></span></span></td>
+                    <td><span>100-129</span></td>
+                    <td><span>21 zile</span></td>
+                </tr>
+                <tr>
+                    <td><span><span>FUN&nbsp;</span><span style="color:#8AC34D;"><strong>UE 130</strong></span></span></td>
+                    <td><span>130-169</span></td>
+                    <td><span>15 zile</span></td>
+                </tr>
+                <tr>
+                    <td><span><span>FUN&nbsp;</span><span style="color:#1DA099;"><strong>UE 170</strong></span></span></td>
+                    <td><span>≥ 170</span></td>
+                    <td><span>15 zile</span></td>
+                </tr>
+               
+            </tbody>
+        </table>
+
+       <b> Condiții de utilizare opțiune:</b>
+       <ul>
+<li>Opțiunea este disponibilă pentru toţi utilizatorii planului tarifar ”Rebel Fun”.</li>
+<li>La fiecare reîncărcare a contului, se va activa automat Opțiunea în dependență de suma reîncărcată.</li>
+<li>Opțiunile se activează automat la suplinirea contului cu o sumă echivalentă prețului opțiunii. Dacă suma depășește valoarea opțiunii, restul banilor rămân în cont.</li> 
+<li>* Aplicaţiile/website-urile incluse în „Nelimitat rețele sociale” a căror trafic (download/upload) nu va fi taxat sunt: Facebook, Messenger, Vkontakte, Instagram, TikTok, Odnoklassniki, WhatsApp, Multiscreen, Unite Talk, MyMoldtelecom, www.moldtelecom.md precum și toate subdomenele acestuia și Wikipedia.</li>
+<li>Aplicaţiile/website-urile incluse în „ Nelimitat rețele sociale” nu sunt gratuite în roaming, ci vor fi taxate conform tarifelor in vigoare.</li>
+<li>După consumarea Minutelor naționale și Traficului Internet inclus în opțiuni, acestea vor fi taxate la tariful aferent planului tarifar.</li>
+<li>Viteza de acces la internet este conform condițiilor de prestare a serviciului din pachet și în funcție de terminalul utilizat.</li>
+<li>Minutele incluse în opțiunea "FUN UE 130" sunt distribuite după cum urmează:  25 de minute de intrare în Roaming UE și 25 de minute de ieșire locale, de ieșire către MD în Roaming UE.</li>
+<li>Minutele și Traficul Internet destinat in roaming UE, sunt disponibile în rețeaua operatorilor de mai jos:</li>
+
+</ul>
 <br>
-<li>  Relația dintre minute spre rețeaua fixă și mobilă MTC, minute către alți operatori naționali  și Trafic internet este „ȘI”.</li>
+<b>&nbsp;&nbsp;&nbsp;Lista operatorilor incluși în seria de opțiuni „Roaming UE” în serviciul Roaming:
+</b>
+<br><br>
+<table class="mtc_popup_block_table">
+	<thead>
+		<tr>
+			<td><span style="color:var(--mtc_pink);"><strong>Țara</strong></span></td>
+			<td><span style="color:var(--mtc_pink);"><strong>Operatori</strong></span></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Ungaria</td>
+			<td>Magyar Telekom</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Austria</td>
+			<td>3 Austria (Hutchison Drei Austria)</td>
+		</tr>
+		<tr>
+			<td>T-Mobile Austria (Magenta)</td>
+		</tr>
+		<tr>
+			<td>Belgia</td>
+			<td>Proximus</td>
+		</tr>
+		<tr>
+			<td>Bulgaria</td>
+			<td>Vivacom Bulgaria</td>
+		</tr>
+		<tr>
+			<td>Cipru</td>
+			<td>Epic</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Croatia</td>
+			<td>Hrvatski Telecom</td>
+		</tr>
+		<tr>
+			<td>Telemach Croatia</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Danemarka</td>
+			<td>3 Denmark (Hi3G Denmark)</td>
+		</tr>
+		<tr>
+			<td>Telenor Denmark</td>
+		</tr>
+		<tr>
+			<td>Estonia</td>
+			<td>Tele 2 Eesti AS</td>
+		</tr>
+		<tr>
+			<td>Finlanda</td>
+			<td>DNA</td>
+		</tr>
+		<tr>
+			<td>Franta</td>
+			<td>Bouygues Telecom</td>
+		</tr>
+		<tr>
+			<td>Franta</td>
+			<td>Free Mobile</td>
+		</tr>
+		<tr>
+			<td>Germania</td>
+			<td>Telekom Deutschland</td>
+		</tr>
+		<tr>
+			<td>Grecia</td>
+			<td>Cosmote Mobile</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Irlanda</td>
+			<td>3 Ireland (Hutschison 3G Ireland)</td>
+		</tr>
+		<tr>
+			<td>Meteor Mobile Communications</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Italia</td>
+			<td>Wind Tre</td>
+		</tr>
+		<tr>
+			<td>ILIAD Italia</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Letonia</td>
+			<td>Bite Latvija</td>
+		</tr>
+		<tr>
+			<td>Tele2</td>
+		</tr>
+		<tr>
+			<td>Liechtenstein</td>
+			<td>Salt Liechtenstein</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Lituania</td>
+			<td>Bite Lietuva</td>
+		</tr>
+		<tr>
+			<td>Tele2</td>
+		</tr>
+		<tr>
+			<td>Luxembourg</td>
+			<td>POST Luxembourg</td>
+		</tr>
+		<tr>
+			<td>Luxembourg</td>
+			<td>Proximus Luxemburg (Tango)</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Malta</td>
+			<td>Melita</td>
+		</tr>
+		<tr>
+			<td>Epic</td>
+		</tr>
+		<tr>
+			<td>Norvegia</td>
+			<td>Telenor</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Polonia</td>
+			<td>PLAY (P4)</td>
+		</tr>
+		<tr>
+			<td>Polkomtel (PLUS)</td>
+		</tr>
+		<tr>
+			<td>Orange Polska</td>
+		</tr>
+		<tr>
+			<td rowspan="4">România</td>
+			<td>RCS&amp;RDS (Digi Mobil)</td>
+		</tr>
+		<tr>
+			<td>Orange Romania</td>
+		</tr>
+		<tr>
+			<td>Telekom Romania Mobile</td>
+		</tr>
+		<tr>
+			<td>Vodafone Romania</td>
+		</tr>
+		<tr>
+			<td>Slovacia</td>
+			<td>Slovak Telekom</td>
+		</tr>
+		<tr>
+			<td>Slovenia</td>
+			<td>Telemach</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Suedia</td>
+			<td>Hi3G (3 Sweden)</td>
+		</tr>
+		<tr>
+			<td>Tele2</td>
+		</tr>
+		<tr>
+			<td>Telenor Sverige (VIMLA)</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<br><br>
+<b>Activare opțiuni:</b>
 <br>
-<li> După expirarea bonusului inițial clientul va fi tarifat din contul creditului disponibil în contul său.</li>
+<ul>
+<li>prin aplicația "MyMoldtelecom".</li>    
+<li>prin codul *200# apel.</li> 
+<li>prin apel la numărul 1181 - Serviciul Suport Clienți.</li> 
+</ul>
 <br>
-<li> Traficul Internet va fi la viteza maximă download și la viteza de până la 512 kbps upload - în dependență de tehnologie.</li>
-</ol>
-</div>
-</div>
+
+<i>Notă 1:</i> După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.<br>
+<i>Notă 2:</i>  Activarea / Dezactivarea opțiunilor este posibilă prin aplicația "MyMoldtelecom" sau prin codul *200# apel.
+
+
+        </div>
+        </div>
 
 
 
@@ -2189,63 +2493,66 @@ box-sizing: border-box;
         
         <div class="mtc_popup_block_title">FAQ</div>
        
-       <b><li> Ce trebuie să știu înainte să înlocuiesc SIM-ul meu actual cu eSIM?</li></b><br><br>
-       &nbsp;&nbsp;&nbsp;Asigură-te că înțelegi că lista ta de contacte și datele existente pe SIM-ul fizic nu se vor transfera automat pe eSIM. Este recomandat să faci o copie a acestora înainte de înlocuirea SIM-ului.
-<br><br><br>
-<b><li>Cât costă eSIM?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Când activezi un număr nou, eSIM-ul este oferit gratis. Dacă treci de la SIM la eSIM pentru prima dată, nu se percep costuri adiționale, însă dacă ai nevoie de o resetare (în cazul pierderii telefonului, de exemplu), taxa de restabilire va fi de doar 25 lei. 
-<br><br><br>
-<b><li>Unde pot obține un eSIM pentru dispozitivul meu?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Magazinele Moldtelecom: Poți obține un eSIM la orice magazin Moldtelecom. Asigură-te că ai un dispozitiv compatibil cu eSIM și un document de identitate la tine.<br>
-&nbsp;&nbsp;&nbsp;Prin aplicația My Moldtelecom pentru clienți noi: Dacă ești client nou și dorești un număr mobil prepay, poți solicita un eSIM direct în aplicația My Moldtelecom, accesând secțiunea "Adaugă număr nou".<br>
-&nbsp;&nbsp;&nbsp;Prin intermediul aplicației My Moldtelecom pentru clienți existenți: Clienții existenți pot comanda înlocuirea unei cartele SIM standard cu un eSIM prin intermediul aplicației My Moldtelecom, accesând secțiunea "Treci la eSIM". Dacă treci de la SIM la eSIM pentru prima dată, nu se percep costuri adiționale, însă dacă ai nevoie de o resetare, taxa de restabilire va fi de doar 25 lei.<br>
-<br><br><br>
-<b><li>Cum să utilizezi serviciul de eSIM?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Pentru a descărca profilul eSIM pe dispozitivul tău, utilizează un cod QR. Pentru a scana codul QR, folosește camera smartphone-ului sau scannerul de cod QR dintr-o secțiune specială a dispozitivului 
-<br><br>&nbsp;&nbsp;&nbsp;iOS: Accesați setările dispozitivului dvs., selectați Date celulare > Adăugați plan celular și îndreptați camera către codul QR.
-<br><br>&nbsp;&nbsp;&nbsp;Android: accesați setările dispozitivului în secțiunea Conexiune > Gestionarea cartelei SIM. Faceți clic pe Adăugați plan mobil, selectați Adăugați cu cod QR și îndreptați camera către codul QR. Setările pot varia în funcție de dispozitiv.
-<br><br><br>
-<b><li>Pot folosi eSIM și SIM obișnuit concomitent, în același telefon?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Da, dacă ai un telefon compatibil, poți utiliza ambele cartele SIM cu funcția de Dual SIM. eSIM-ul oferă aceleași posibilități ca un SIM obișnuit. Doar selectează opțiunile pentru aceste 2 conexiuni.
-<br><br><br>
-<b><li>Câte numere de telefon pot instala pe dispozitivul meu mobil compatibil eSIM?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;În scenariile testate de noi, am instalat până la 5 profile de eSIM. Numărul maxim, însă, depinde de capacitatea de stocare a fiecărui producător de dispozitive mobile. Chiar dacă vei avea mai multe numere de telefon instalate, doar pe unul dintre ele îl vei putea seta ca activ la un moment dat.
-<br><br><br>
-<b><li>Cât timp este valabil QR codul primit?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Codul QR de activare eSIM nu are termen de valabilitate, dar poate fi utilizat doar până la anularea serviciilor. Însă, odată scanat, acesta nu mai poate fi reutilizat. După ce ai obținut codul QR, îți recomandăm să instalezi în telefon profilul eSIM cât mai curând.
-<br><br><br>
-<b><li>Serviciile pentru care este disponibilă cartela digitală eSIM</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Cartela digitală eSIM este disponibilă împreună cu serviciile de telefonie mobilă, atât pentru persoane fizice. Poți utiliza eSIM cu următoarele servicii:
 
-<ul>
-<li>Număr Mobil Prepay</li>
-<li>Abonament Mobil voce</li>
-<li>Abonament Internet mobil</li>
-</ul>
-<br>
-<b><li>Este posibil să migrez de la cartela digitală eSIM la abonament?</li></b><br><br>
-Da, pe pagina moldtelecom.md/telefonie mobilă puteți alege un abonament contractual și îl puteți programa online prin aplicația My Moldtelecom, secțiunea "solicită migrare la abonament"
-<br><br><br>
-<b><li>Ce trebuie să fac dacă nu pot activa eSIM-ul?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;În primul rând, asigură-te că:
-<ul></ul>
-<li>Ești conectat la Wi-Fi prin telefon;</li>
-<li>Ai un cod QR nou pe care nu l-ai mai utilizat anterior.</li>
-<li>În cazul în care întâmpini o eroare necunoscută, te rugăm să contactezi Serviciul Clienți, la numărul 1181, pe chat Moldtelecom sau să vizitezi orice magazin Moldtelecom.</li>
-&nbsp;&nbsp;&nbsp;Dacă toate condițiile sunt asigurate, ar trebui să poți activa cartela eSIM cu succes.
-<br><br><br>
-<b><li>Ce trebuie să fac dacă am renunțat la serviciile Moldtelecom?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;După ce serviciile Moldtelecom au fost anulate, intră în meniul telefonului tău la setările de rețea și șterge profilul eSIM atribuit numărului tău.
-<br><br><br>
-<b><li>Cum să transfer eSIM-ul existent dacă mi-am luat un telefon nou?</li></b><br><br>
-<ul>
-<li>Dacă noul telefon este compatibil eSIM, este nevoie să obții un nou cod QR pentru numărul tău, accesând My Moldtelecom (sectiunea eSIM). Deoarece la generarea unui nou cod QR pentru eSIM vei primi o parolă prin SMS, este necesar să ai numărul tău activ pe telefonul vechi. După ce codul QR nou este generat, trebuie să îl scanezi cu telefonul tău care este conectat la o rețea WiFi. În acel moment cartela eSIM devine activă în noul tău telefon, iar în telefonul vechi se va dezactiva automat.</li>
-    <li>Însă dacă ai nevoie de o cartelă SIM fizică sau în telefonul vechi ai dezactivat sau șters cartela eSIM existentă, vino în unul din magazinele Moldtelecom.</li>
-</ul>
+        <b><li>  Ce trebuie să știu înainte să înlocuiesc cardul meu SIM actual cu eSIM?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;Este important să reții că lista de contacte și alte date stocate pe cardul tău SIM fizic nu vor fi transferate automat pe eSIM. Recomandăm insistent să faci o copie de rezervă a contactelor și a altor date importante de pe SIM, înainte de a-l înlocui cu un eSIM.
+        <br><br><br>
+        <b><li>  Cât costă eSIM?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;Când activezi un număr nou, eSIM-ul este oferit gratuit. Dacă treci de la SIM la eSIM pentru prima dată, nu se percep costuri adiționale, însă dacă ai nevoie de o resetare (în cazul pierderii telefonului, de exemplu), taxa de restabilire va fi de doar 25 lei. 
+        <br><br><br>
+        <b><li>  Unde pot obține un eSIM pentru dispozitivul meu?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;În magazinele Moldtelecom: Poți obține un eSIM la orice magazin Moldtelecom. Asigură-te că ai un dispozitiv compatibil cu eSIM și un document de identitate la tine.
+        <br><br>&nbsp;&nbsp;&nbsp;Prin aplicația My Moldtelecom pentru clienți noi: Dacă ești client nou și dorești un număr mobil prepay, poți solicita un eSIM direct în aplicația My Moldtelecom, accesând secțiunea „Adaugă număr nou".
+        <br><br>&nbsp;&nbsp;&nbsp;Prin intermediul aplicației My Moldtelecom pentru clienți existenți: Clienții existenți pot comanda înlocuirea unei cartele SIM standard cu un eSIM prin intermediul aplicației My Moldtelecom, accesând secțiunea „Treci la eSIM". Dacă treci de la SIM la eSIM pentru prima dată, nu se percep costuri adiționale, însă dacă ai nevoie de o resetare, taxa de restabilire va fi de doar 25 lei.
+        <br><br><br>
+        <b><li>  Cum să utilizezi serviciul de eSIM?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;Pentru a descărca profilul eSIM pe dispozitivul tău, utilizează un cod QR. Pentru a scana codul QR, folosește camera smartphone-ului sau scannerul de cod QR dintr-o secțiune specială a dispozitivului 
+       
+       <ul>
+        <li>iOS: Accesează setările dispozitivului, selectează „Date celulare” > Adăugați plan celular și îndreptați camera către codul QR.</li>
+        <li>Android: Accesează setările dispozitivului în secțiunea „Conexiune” > „Gestionarea cartelei SIM”. Fă click pe „Adaugă plan mobil”, selectează „Adăugă cu cod QR” și îndreptă camera către codul QR. Setările pot varia în funcție de dispozitiv.</li>
+    </ul>
+        
     <br><br><br>
-<b><li>Ce se întâmplă dacă șterg profilul de eSIM din telefon?</li></b><br><br>
-&nbsp;&nbsp;&nbsp;Din păcate, nu vei mai avea acces la serviciu pentru numărul respective. Înainte de a șterge profilul de eSIM, asigură-te că ai o conexiune Wi-Fi pentru reinstalare sau un alt SIM de înlocuire.
+        <b><li>  Pot folosi eSIM și SIM obișnuit concomitent, în același telefon?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;Da, dacă ai un telefon compatibil, poți utiliza ambele cartele SIM cu funcția de Dual SIM. eSIM-ul oferă aceleași posibilități ca un SIM obișnuit. Doar selectează opțiunile pentru aceste 2 conexiuni.
+        <br><br><br>
+        <b><li> Câte numere de telefon pot instala pe dispozitivul meu mobil compatibil cu eSIM?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;În scenariile testate de noi, am instalat până la 5 profile de eSIM. Numărul maxim, însă, depinde de capacitatea de stocare a fiecărui producător de dispozitive mobile. Chiar dacă vei avea mai multe numere de telefon instalate, doar pe unul dintre ele îl vei putea seta, la un moment dat, ca activ.
+        <br><br><br>
+        <b><li>  Cât timp este valabil QR codul primit?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;Codul QR de activare eSIM nu are termen de valabilitate, dar poate fi utilizat doar până la anularea serviciilor. Însă, odată scanat, acesta nu mai poate fi reutilizat. După ce ai obținut codul QR, îți recomandăm să instalezi în telefon profilul eSIM cât mai curând.
+        <br><br><br>
+        <b><li> Pentru ce servicii este disponibilă cartela digitală eSIM?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp; Cartela digitală eSIM este disponibilă împreună cu serviciile de telefonie mobile pentru persoane fizice. Poți utiliza eSIM cu următoarele servicii:
+       <ul>
+       <li> Număr Mobil Prepay;</li>
+       <li> Abonament Mobil voce;</li>
+        <li>Abonament Internet mobil.</li>
+       </ul>
+       <br><br><br>
+        <b><li>  Este posibil să migrez de la cartela digitală eSIM la abonament?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp; Da, pe pagina moldtelecom.md/Abonamente_Telefonie_Mobila poți alege un abonament și îl poți programa online prin aplicația My Moldtelecom, secțiunea „Solicită migrare la abonament”.
+        <br><br><br>
+        <b><li> Ce trebuie să fac dacă nu pot activa eSIM?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;În primul rând, asigură-te că:
 
+        <ul>
+            <li>Ești conectat la Wi-Fi prin telefon;</li>
+       <li>Ai un cod QR nou pe care nu l-ai mai utilizat anterior;</li>
+       <li>În cazul în care întâmpini o eroare necunoscută, te rugăm să contactezi Serviciul Clienți, la numărul 1181, chat Moldtelecom sau să vizitezi orice magazin Moldtelecom.</li>
+    </ul>
+    &nbsp;&nbsp;&nbsp;Dacă toate condițiile sunt respectate, ar trebui să poți activa cartela eSIM cu succes.
+    <br><br><br>
+        <b><li> Ce trebuie să fac dacă am renunțat la serviciile Moldtelecom?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;După ce serviciile Moldtelecom au fost anulate, intră în meniul telefonului tău la setările de rețea și șterge profilul eSIM atribuit numărului tău.
+        <br><br><br>
+        <b><li> Cum să transfer eSIM-ul existent, dacă mi-am luat un telefon nou?</li></b><br><br>
+        1. Dacă noul telefon este compatibil cu eSIM, este nevoie să obții un nou QR cod pentru numărul tău, accesând My Moldtelecom (sectiunea eSIM). Deoarece, la generarea unui nou cod QR pentru eSIM, vei primi o parolă prin SMS și este necesar să ai numărul tău activ pe telefonul vechi. După ce codul QR nou este generat, trebuie să îl scanezi cu telefonul tău care este conectat la o rețea Wi-Fi. În acel moment cartela eSIM devine activă în noul tău telefon, iar în telefonul vechi se va dezactiva automat.
+        2. Însă, dacă ai nevoie de o cartelă SIM fizică sau în telefonul vechi ai dezactivat sau șters cartela eSIM existentă, vino în unul din magazinele Moldtelecom.
+        
+        <b><li>  Ce se întâmplă, dacă șterg profilul de eSIM din telefon?</li></b><br><br>
+        &nbsp;&nbsp;&nbsp;Din păcate, nu vei mai avea acces la serviciu pentru numărul respectiv. Înainte de a șterge profilul de eSIM, asigură-te că ai o conexiune Wi-Fi pentru reinstalare sau un alt SIM de înlocuire.
         </div>
         </div>
 
