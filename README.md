@@ -28,3 +28,15 @@ python3 dev/LandingToProduction.py <name>
 ```
 python3 dev/DirectMailToProduction.py <name>
 ```
+
+
+### Landings:
+
+- [e-SIM](https://cristianbrinza.github.io/mtc/landings/esim.html)
+
+### Directmail:
+
+- [e-SIM_qr](https://cristianbrinza.github.io/mtc/landings/esim_qr_ro.html)
+- [e-SIM_code](https://cristianbrinza.github.io/mtc/landings/esim_code_ro.html)
+- [e-SIM_pat](https://cristianbrinza.github.io/mtc/landings/esim_pay_ro.html)
+- [e-SIM_thx](https://cristianbrinza.github.io/mtc/landings/esim_thx_ro.html)
