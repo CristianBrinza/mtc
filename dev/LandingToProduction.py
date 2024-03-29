@@ -33,7 +33,8 @@ replacements = {
     "../webkit/fonts/": "/fonts/",
     "../webkit/mtc_webkit_v2.css" : "https://moldtelecom.md/new/js/mtc_webkit_v2.css",
     "../webkit/mtc_webkit_v2.js" : "https://moldtelecom.md/new/js/mtc_webkit_v2.js",
-    "assets/"+landing+"/images/" : "https://moldtelecom.md/new/images/landings/personal/"+landing+"/"
+    "assets/"+landing+"/images/" : "https://moldtelecom.md/new/images/landings/personal/"+landing+"/",
+    "assets/esim/files/": "https://moldtelecom.md/new/files/",
 }
 
 # Output directory, adjusted to be relative to the current script's directory
