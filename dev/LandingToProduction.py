@@ -2,9 +2,17 @@ import os
 import sys
 import shutil
 
+# Function to delete folder and handle potential errors
+def delete_folder(folder_path):
+    try:
+        shutil.rmtree(folder_path)
+        return True
+    except Exception as e:
+        print(f"Error deleting folder {folder_path}: {e}")
+        return False
+
 # Determine the directory of the current script
 current_script_dir = os.path.dirname(os.path.abspath(__file__))
-
 
 # Check if an argument was provided
 if len(sys.argv) < 2:
@@ -13,6 +21,7 @@ if len(sys.argv) < 2:
 
 # Use the provided argument as the landing
 landing = sys.argv[1]
+
 # List of files to process with your preferred declaration
 files = ['../webkit/mtc_webkit_v2.css', 
          '../webkit/mtc_webkit_v2.js',
@@ -26,16 +35,29 @@ replacements = {
     "../webkit/mtc_webkit_v2.js" : "https://moldtelecom.md/new/js/mtc_webkit_v2.js",
     "assets/"+landing+"/images/" : "https://moldtelecom.md/new/images/landings/personal/"+landing+"/"
 }
+
 # Output directory, adjusted to be relative to the current script's directory
-output_dir = os.path.join(current_script_dir, 'production')
+output_dir = os.path.join(current_script_dir, landing)
+
+# If the output directory already exists, prompt the user for action
+if os.path.exists(output_dir):
+    user_choice = input(f"The folder {output_dir} already exists. Do you want to change it? [y/n]: ").strip().lower()
+    if user_choice == 'y':
+        if delete_folder(output_dir):
+            print(f"Folder {output_dir} deleted successfully.")
+        else:
+            print("Failed to delete the existing folder. Exiting...")
+            sys.exit(1)
+    else:
+        print("User opted not to change the existing folder. Exiting...")
+        sys.exit(1)
+
+# Recreate the output directory
+os.makedirs(output_dir, exist_ok=True)
 
 # Source and destination directories for copying
 source_dir = os.path.join(current_script_dir, f'../landings/assets/{landing}')
-dest_dir = os.path.join(output_dir, 'assets', )
-
-# Create the output directory if it doesn't exist
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
+dest_dir = os.path.join(output_dir, 'assets')
 
 # Copy the entire directory
 if os.path.exists(source_dir) and not os.path.exists(dest_dir):
