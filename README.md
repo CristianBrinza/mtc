@@ -36,7 +36,7 @@ python3 dev/DirectMailToProduction.py <name>
 
 ### Directmail:
 
-- [e-SIM_qr](https://cristianbrinza.github.io/mtc/landings/esim_qr_ro.html)
-- [e-SIM_code](https://cristianbrinza.github.io/mtc/landings/esim_code_ro.html)
-- [e-SIM_pat](https://cristianbrinza.github.io/mtc/landings/esim_pay_ro.html)
-- [e-SIM_thx](https://cristianbrinza.github.io/mtc/landings/esim_thx_ro.html)
+- [e-SIM_qr](https://cristianbrinza.github.io/mtc/directmail/esim_qr_ro.html)
+- [e-SIM_code](https://cristianbrinza.github.io/mtc/directmail/esim_code_ro.html)
+- [e-SIM_pay](https://cristianbrinza.github.io/mtc/directmail/esim_pay_ro.html)
+- [e-SIM_thx](https://cristianbrinza.github.io/mtc/directmail/esim_thx_ro.html)
