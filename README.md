@@ -36,7 +36,10 @@ python3 dev/DirectMailToProduction.py <name>
 
 ### Directmail:
 
-- [e-SIM_qr](https://cristianbrinza.github.io/mtc/directmail/esim_qr_ro.html)
-- [e-SIM_code](https://cristianbrinza.github.io/mtc/directmail/esim_code_ro.html)
-- [e-SIM_pay](https://cristianbrinza.github.io/mtc/directmail/esim_pay_ro.html)
-- [e-SIM_thx](https://cristianbrinza.github.io/mtc/directmail/esim_thx_ro.html)
+
+|name|ro|ru|en|
+|----|----|----|----|
+|e-SIM_qr|[■](https://cristianbrinza.github.io/mtc/directmail/esim_qr_ro.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_qr_ru.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_qr_en.html)
+|e-SIM_code|[■](https://cristianbrinza.github.io/mtc/directmail/esim_code_ro.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_code_ru.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_code_en.html)
+|e-SIM_pay|[■](https://cristianbrinza.github.io/mtc/directmail/esim_pay_ro.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_pay_ru.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_pay_en.html)
+|e-SIM_thx|[■](https://cristianbrinza.github.io/mtc/directmail/esim_thx_ro.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_thx_ru.html)|[■](https://cristianbrinza.github.io/mtc/directmail/esim_thx_en.html)
