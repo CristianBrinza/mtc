@@ -1,0 +1,37 @@
+{
+    "ADSL":{
+        "Simplu":57,
+        "Simplu_HD":0,
+        "Premier":100,
+        "Premier_HD":0,
+        "Univers":146,
+        "Univers_HD":0
+    },
+    "FIBER":{
+        "Simplu":57,
+        "Simplu_HD":29,
+        "Premier":100,
+        "Premier_HD":62,
+        "Univers":146,
+        "Univers_HD":95
+    },
+    "Smart_TV":{
+        "Canale":100,
+        "HD":0
+    },
+    "pret":{
+        "ADSL":{
+            "Premier":140,
+            "Univers":150,
+            "Simplu":130,
+            "Smart_TV":50
+        },
+        "FIBER":{
+            "Premier":140,
+            "Univers":150,
+            "Simplu":130,
+            "Smart_TV":50
+        }
+    },
+    "radio":3
+}
