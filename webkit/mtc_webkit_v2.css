@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Inter");
 :root {
   --mtc_blue: #212a55;
@@ -107,7 +107,7 @@ body::-webkit-scrollbar {
     font-weight: 500;
     font-style: normal;
   }
-
+  
   @font-face {
     font-family: "MTC-Futura New Cond";
     src: url("../webkit/fonts/MTC-FuturaNewCondExtraBold.ttf") format("truetype");
@@ -1580,4 +1580,8 @@ margin-bottom: 20px;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   z-index: 100000; /* Ensure it's above other content; adjust as necessary */
   display: none; /* Initially hidden */
+}
+
+#mtc_tv_options{
+  margin: 50px 0;
 }

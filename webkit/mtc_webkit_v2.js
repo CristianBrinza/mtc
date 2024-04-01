@@ -135,13 +135,13 @@ function hideoldfooter() {
   }
 }
 
-
 // Insert the loading animation div as the first element of the body
 function insertLoadingDiv() {
-    const div = document.createElement('div');
-    div.id = 'mtc_loadingAnimationSVG';
-    div.innerHTML = '<img alt="loading" src="https://www.moldtelecom.md/new/images/general/logo/loading.png">';
-    document.body.insertBefore(div, document.body.firstChild);
+  const div = document.createElement("div");
+  div.id = "mtc_loadingAnimationSVG";
+  div.innerHTML =
+    '<img alt="loading" src="https://www.moldtelecom.md/new/images/general/logo/loading.png">';
+  document.body.insertBefore(div, document.body.firstChild);
 }
 
 //---------------------------------------------------------------------
@@ -151,16 +151,20 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("[DEV] : MTC WebKit used");
 
   // Insert the loading animation div
-insertLoadingDiv();
+  insertLoadingDiv();
 
   //---------------------------------------------------------------------
 
   fetch("../webkit/new/html/footer.html")
     .then((response) => response.text())
     .then((data) => {
-      document.getElementById("mtc_footer").innerHTML = data;
-      set_footer();
-      hideoldfooter();
+      const footerElement = document.getElementById("mtc_footer");
+      // Check if the element exists
+      if (footerElement) {
+        footerElement.innerHTML = data;
+        set_footer();
+        hideoldfooter();
+      }
     });
 
   // Element to update based on the language preference
@@ -183,6 +187,39 @@ insertLoadingDiv();
       footer_text.innerText = "Default Text"; // Example default text
     }
   }
+  fetch("../webkit/new/html/call_"+lang+".html")
+  .then((response) => response.text())
+  .then((data) => {
+    const mtc_tv_call = document.getElementById("mtc_tv_call");
+    // Check if the element exists
+    if (mtc_tv_call) {
+      mtc_tv_call.innerHTML = data;
+    }
+  });
+
+
+  fetch("../webkit/new/html/tv_options_"+lang+".html")
+  .then((response) => response.text())
+  .then((data) => {
+    const mtc_tv_options = document.getElementById("mtc_tv_options");
+    // Check if the element exists
+    if (mtc_tv_options) {
+      mtc_tv_options.innerHTML = data;
+      initializeSlickCarousel();
+    }
+  });
+
+  fetch("../webkit/new/html/myapp_"+lang+".html")
+  .then((response) => response.text())
+  .then((data) => {
+    const mtc_mtc_app = document.getElementById("mtc_mtc_app");
+    // Check if the element exists
+    if (mtc_mtc_app) {
+      mtc_mtc_app.innerHTML = data;
+    }
+  });
+
+
 });
 
 //---------------------------------------------------------------------
@@ -235,3 +272,41 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", handleFormSubmission);
   }
 });
+
+function initializeSlickCarousel() {
+  var carousel = $('.carousell_tv_options');
+  if (carousel.length) { // Checks if the element exists
+      carousel.slick({
+
+    arrows: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 1351,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 951,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+} else {
+    console.error('Carousel element not found');
+}
+}
