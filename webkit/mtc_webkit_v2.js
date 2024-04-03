@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check if the element exists
     if (mtc_tv_options) {
       mtc_tv_options.innerHTML = data;
-      initializeSlickCarousel();
+      initializeSlickCarousel_tv();
     }
   });
 
@@ -216,6 +216,29 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check if the element exists
     if (mtc_mtc_app) {
       mtc_mtc_app.innerHTML = data;
+    }
+  });
+
+
+  fetch("../webkit/new/html/funtions_options_"+lang+".html")
+  .then((response) => response.text())
+  .then((data) => {
+    const mtc_tv_functions = document.getElementById("mtc_tv_functions");
+    // Check if the element exists
+    if (mtc_tv_functions) {
+      mtc_tv_functions.innerHTML = data;
+      initializeSlickCarousel_funtions();
+    }
+  });
+
+  fetch("../webkit/new/html/tm_options_"+lang+".html")
+  .then((response) => response.text())
+  .then((data) => {
+    const mtc_tm_options = document.getElementById("mtc_tm_options");
+    // Check if the element exists
+    if (mtc_tm_options) {
+      mtc_tm_options.innerHTML = data;
+      initializeSlickCarousel_tm();
     }
   });
 
@@ -273,8 +296,85 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-function initializeSlickCarousel() {
+function initializeSlickCarousel_tv() {
   var carousel = $('.carousell_tv_options');
+  if (carousel.length) { // Checks if the element exists
+      carousel.slick({
+
+    arrows: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 1351,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 951,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+} else {
+    console.error('Carousel element not found');
+}
+}
+
+
+function initializeSlickCarousel_funtions() {
+  var carousel = $('.carousell_tv_functions');
+  if (carousel.length) { // Checks if the element exists
+      carousel.slick({
+
+    arrows: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 1351,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 951,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+} else {
+    console.error('Carousel element not found');
+}
+}
+
+function initializeSlickCarousel_tm() {
+  var carousel = $('.carousell_tm_options');
   if (carousel.length) { // Checks if the element exists
       carousel.slick({
 
